@@ -137,57 +137,13 @@ Phase 18｜QA & Testing
 Phase 19｜Deployment
 Phase 20｜Maintenance & Documentation
 
-不得跳過重要 Phase。
-
 ---
 
-# 五、每一個 Phase 的固定輸出格式
-
-每完成一個 Phase，必須提供：
-
-## 1. Phase Objective
-
-本階段目的。
-
-## 2. Problems
-
-目前發現的問題。
-
-## 3. Analysis
-
-專業分析。
-
-## 4. Recommendations
-
-改善建議。
-
-## 5. Deliverables
-
-本階段應產出的文件或成果。
-
-## 6. Decision
-
-本階段需要確認的決策。
-
-## 7. Next Phase
-
-下一階段工作。
-
----
-
-# 六、重要原則
+# 五、重要原則
 
 ## Principle 01｜先策略，再設計
 
-不要一開始就討論：
-
-* 顏色
-* 字體
-* Banner
-* 動畫
-* CSS
-
-必須先確認：
+先確認：
 
 Business Goal
 User Goal
@@ -197,10 +153,6 @@ Conversion Goal
 ---
 
 ## Principle 02｜不是重新裝修，而是重新設計
-
-不要只是：
-
-「把舊網站換成新的 Bootstrap Template。」
 
 必須重新思考：
 
@@ -257,7 +209,7 @@ Conversion Goal
 
 ---
 
-# 七、網站架構要求
+# 六、網站架構要求
 
 建立新的 Sitemap。
 
@@ -273,8 +225,6 @@ News
 Downloads
 Contact
 
-但不要直接假設以上架構一定正確。
-
 必須根據：
 
 * 舊網站內容
@@ -288,7 +238,7 @@ Contact
 
 ---
 
-# 八、SEO 要求
+# 七、SEO 要求
 
 網站必須建立基本 SEO 架構：
 
@@ -312,7 +262,7 @@ Contact
 
 ---
 
-# 九、HTML5 要求
+# 八、HTML5 要求
 
 HTML 必須使用 Semantic HTML。
 
@@ -338,7 +288,7 @@ HTML 結構必須：
 
 ---
 
-# 十、Bootstrap 要求
+# 九、Bootstrap 要求
 
 Bootstrap 用於：
 
@@ -356,7 +306,7 @@ Bootstrap 是底層工具。
 
 ---
 
-# 十一、CSS3 要求
+# 十、CSS3 要求
 
 建立：
 
@@ -382,7 +332,7 @@ CSS 必須：
 
 ---
 
-# 十二、jQuery 要求
+# 十一、jQuery 要求
 
 jQuery 主要用於：
 
@@ -403,7 +353,7 @@ jQuery 主要用於：
 
 ---
 
-# 十三、效能要求
+# 十二、效能要求
 
 網站必須考慮：
 
@@ -421,7 +371,7 @@ jQuery 主要用於：
 
 ---
 
-# 十四、Accessibility
+# 十三、Accessibility
 
 至少考慮：
 
@@ -436,7 +386,7 @@ jQuery 主要用於：
 
 ---
 
-# 十五、QA
+# 十四、QA
 
 正式上線前必須測試：
 
@@ -470,7 +420,7 @@ jQuery 主要用於：
 
 ---
 
-# 十六、最終網站檔案架構
+# 十五、最終網站檔案架構
 
 請最終建立類似以下結構：
 
@@ -515,30 +465,9 @@ jQuery 主要用於：
 
 ---
 
-# 十七、AI 的工作規則
+# 十六、最終成果
 
-你不是單純的 Coding Assistant。
-
-你必須像一個完整 Website Agency Team 工作。
-
-當我要求進入下一個 Phase 時：
-
-1. 先回顧上一個 Phase 的決策。
-2. 不重複已經決定的內容。
-3. 找出可能的問題。
-4. 提出專業建議。
-5. 建立本階段 Deliverables。
-6. 等待我確認後，再進入下一個重要 Phase。
-
-如果發現需求不合理，必須主動指出。
-
-如果發現技術限制造成問題，必須提出替代方案，但仍然遵守本專案技術限制。
-
----
-
-# 十八、最終成果
-
-本專案完成後，我希望得到的不只是：
+本專案完成後，希望得到的不只是：
 
 「一個重新設計的網站。」
 
