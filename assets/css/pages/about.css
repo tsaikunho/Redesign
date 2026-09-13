@@ -1,0 +1,588 @@
+/* =========================================================
+   WDC2026｜About Page CSS
+   File: assets/css/pages/about.css
+
+   Scope:
+   - About Hero
+   - Breadcrumb
+   - Company Overview
+   - Company History
+   - Mission / Vision / Values
+   - Core Strengths
+   - Business Scope
+   - Certifications
+   - About CTA
+
+   Principle:
+   - Mobile First
+   - Bootstrap handles grid
+   - Global CSS handles tokens / utilities
+   - This file handles About Page only
+========================================================= */
+
+
+/* =========================================================
+   01｜About Hero
+========================================================= */
+
+.about-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   02｜Breadcrumb
+========================================================= */
+
+.breadcrumb-wrapper {
+  padding-block: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+}
+
+.breadcrumb-wrapper .breadcrumb {
+  font-size: var(--text-sm);
+}
+
+.breadcrumb-wrapper .breadcrumb-item a {
+  text-decoration: none;
+  color: var(--color-text-muted);
+}
+
+.breadcrumb-wrapper .breadcrumb-item a:hover,
+.breadcrumb-wrapper .breadcrumb-item a:focus-visible {
+  color: var(--color-primary);
+}
+
+.breadcrumb-wrapper .breadcrumb-item.active {
+  color: var(--color-text);
+}
+
+
+/* =========================================================
+   03｜Company Overview
+========================================================= */
+
+.about-overview {
+  overflow: hidden;
+}
+
+.about-overview__content {
+  max-width: 680px;
+}
+
+.about-overview__content p {
+  margin-bottom: var(--space-4);
+}
+
+.about-overview__content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------
+   Overview Media
+--------------------------------------------------------- */
+
+.about-overview__media {
+  position: relative;
+}
+
+.about-overview__media .media-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 320px;
+
+  padding: var(--space-6);
+
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+
+  background-color: var(--color-bg-soft);
+
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+
+/* =========================================================
+   04｜Company History
+========================================================= */
+
+.about-history {
+  overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   Timeline
+--------------------------------------------------------- */
+
+.about-timeline {
+  position: relative;
+
+  margin-top: var(--space-8);
+}
+
+
+/* Vertical Line */
+
+.about-timeline::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 8px;
+
+  width: 1px;
+
+  background-color: var(--color-border);
+}
+
+
+/* Timeline Item */
+
+.about-timeline__item {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: var(--space-3);
+
+  padding-left: var(--space-8);
+
+  padding-bottom: var(--space-8);
+}
+
+.about-timeline__item:last-child {
+  padding-bottom: 0;
+}
+
+
+/* Timeline Dot */
+
+.about-timeline__item::before {
+  content: "";
+
+  position: absolute;
+
+  top: 5px;
+  left: 3px;
+
+  width: 11px;
+  height: 11px;
+
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+
+  background-color: var(--color-bg-soft);
+}
+
+
+/* Year */
+
+.about-timeline__year {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 0.05em;
+}
+
+
+/* Content */
+
+.about-timeline__content h3 {
+  margin-bottom: var(--space-2);
+
+  font-size: var(--text-lg);
+}
+
+.about-timeline__content p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+
+/* =========================================================
+   05｜Mission / Vision / Values
+========================================================= */
+
+.about-values {
+  overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   Value Card
+--------------------------------------------------------- */
+
+.value-card {
+  height: 100%;
+
+  padding: var(--space-6);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  background-color: var(--color-bg);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-4px);
+
+  border-color: var(--color-primary);
+
+  box-shadow: var(--shadow-md);
+}
+
+
+.value-card__number {
+  margin-bottom: var(--space-4);
+
+  font-size: var(--text-sm);
+  font-weight: 700;
+
+  color: var(--color-primary);
+
+  letter-spacing: 0.08em;
+}
+
+
+.value-card__title {
+  margin-bottom: var(--space-3);
+
+  font-size: var(--text-xl);
+}
+
+
+.value-card__text {
+  margin-bottom: 0;
+
+  color: var(--color-text-muted);
+}
+
+
+/* =========================================================
+   06｜Core Strengths
+========================================================= */
+
+.about-strengths {
+  overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   Strength Card
+--------------------------------------------------------- */
+
+.strength-card {
+  height: 100%;
+
+  padding: var(--space-6);
+
+  border-top: 2px solid var(--color-primary);
+
+  background-color: var(--color-bg);
+}
+
+
+.strength-card__number {
+  display: block;
+
+  margin-bottom: var(--space-4);
+
+  font-size: var(--text-sm);
+  font-weight: 700;
+
+  color: var(--color-primary);
+
+  letter-spacing: 0.08em;
+}
+
+
+.strength-card h3 {
+  margin-bottom: var(--space-3);
+
+  font-size: var(--text-lg);
+}
+
+
+.strength-card p {
+  margin-bottom: 0;
+
+  color: var(--color-text-muted);
+}
+
+
+/* =========================================================
+   07｜Business Scope
+========================================================= */
+
+.about-business {
+  overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   Business Card
+--------------------------------------------------------- */
+
+.business-card {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: var(--space-6);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  background-color: var(--color-bg);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.business-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: var(--shadow-md);
+}
+
+
+.business-card h3 {
+  margin-bottom: var(--space-3);
+
+  font-size: var(--text-xl);
+}
+
+
+.business-card p {
+  flex-grow: 1;
+
+  margin-bottom: var(--space-5);
+
+  color: var(--color-text-muted);
+}
+
+
+.business-card .btn {
+  align-self: flex-start;
+}
+
+
+/* =========================================================
+   08｜Certifications
+========================================================= */
+
+.about-certifications {
+  overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   Certification Placeholder
+--------------------------------------------------------- */
+
+.certification-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 180px;
+
+  margin-top: var(--space-8);
+  padding: var(--space-6);
+
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+
+  background-color: var(--color-bg);
+
+  color: var(--color-text-muted);
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   09｜About CTA
+========================================================= */
+
+.about-cta {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.about-cta h2 {
+  margin-bottom: var(--space-4);
+}
+
+
+.about-cta p {
+  margin-bottom: var(--space-6);
+
+  color: var(--color-text-inverse-muted);
+}
+
+
+/* =========================================================
+   10｜Responsive
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   Tablet
+   ≥ 768px
+--------------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Overview */
+
+  .about-overview__media .media-placeholder {
+    min-height: 420px;
+  }
+
+
+  /* Timeline */
+
+  .about-timeline::before {
+    left: 120px;
+  }
+
+
+  .about-timeline__item {
+    grid-template-columns: 96px 1fr;
+
+    column-gap: var(--space-6);
+
+    padding-left: 0;
+  }
+
+
+  .about-timeline__item::before {
+    left: 115px;
+  }
+
+
+  .about-timeline__year {
+    text-align: right;
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   Desktop
+   ≥ 992px
+--------------------------------------------------------- */
+
+@media (min-width: 992px) {
+
+  /* Overview */
+
+  .about-overview__content {
+    padding-right: var(--space-5);
+  }
+
+
+  /* Timeline */
+
+  .about-timeline {
+    margin-top: var(--space-10);
+  }
+
+
+  /* Value Card */
+
+  .value-card {
+    padding: var(--space-7);
+  }
+
+
+  /* Strength Card */
+
+  .strength-card {
+    padding: var(--space-7);
+  }
+
+
+  /* Business Card */
+
+  .business-card {
+    padding: var(--space-7);
+  }
+
+
+  /* Certification */
+
+  .certification-placeholder {
+    min-height: 220px;
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   Large Desktop
+   ≥ 1200px
+--------------------------------------------------------- */
+
+@media (min-width: 1200px) {
+
+  .about-overview__content {
+    padding-right: var(--space-8);
+  }
+
+
+  .about-timeline__item {
+    column-gap: var(--space-8);
+  }
+
+}
+
+
+/* =========================================================
+   11｜Accessibility
+========================================================= */
+
+.value-card:focus-within,
+.business-card:focus-within {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+
+/* =========================================================
+   12｜Reduced Motion
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .value-card,
+  .business-card {
+    transition: none;
+  }
+
+  .value-card:hover,
+  .business-card:hover {
+    transform: none;
+  }
+
+}

@@ -1,0 +1,384 @@
+/* =========================================
+   Global Header State
+========================================= */
+
+@media (max-width: 991.98px) {
+  .main-navbar .nav-link::after {
+    display: none;
+  }
+
+  .main-navbar .nav-link.active {
+    font-weight: 600;
+  }
+}
+
+/* =========================================
+   S003｜Trust Responsive
+========================================= */
+
+@media (max-width: 991.98px) {
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trust-card {
+    min-height: 240px;
+    padding: var(--space-6);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-card {
+    min-height: auto;
+    padding: var(--space-6);
+  }
+
+  .trust-card__number {
+    font-size: 2.5rem;
+  }
+}
+
+/* =========================================
+   S004｜Product Categories Responsive
+========================================= */
+
+@media (max-width: 991.98px) {
+  .section-header-action {
+    justify-content: flex-start;
+    margin-top: calc(var(--space-5) * -1);
+    margin-bottom: var(--space-6);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .product-card__body {
+    padding: var(--space-5);
+  }
+
+  .product-card__title {
+    font-size: 1.2rem;
+  }
+}
+
+/* =========================================
+   S005｜Manufacturing Responsive
+========================================= */
+
+@media (max-width: 991.98px) {
+  .manufacturing-intro {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .capability-item {
+    grid-template-columns: 48px 1fr;
+    gap: var(--space-4);
+    padding-block: var(--space-5);
+  }
+
+  .capability-item__title {
+    font-size: 1.15rem;
+  }
+
+  .capability-item__text {
+    font-size: 0.875rem;
+  }
+}
+
+/* =========================================
+   S006｜Quality Responsive
+========================================= */
+
+@media (max-width: 991.98px) {
+  .quality-standards__text {
+    max-width: none;
+  }
+
+  .quality-standard-tags {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .quality-card {
+    min-height: auto;
+    padding: var(--space-5);
+  }
+
+  .quality-standards {
+    padding: var(--space-5);
+  }
+
+  .quality-standards__title {
+    font-size: 1.3rem;
+  }
+
+  .quality-standard-tag {
+    min-height: 44px;
+    padding-inline: var(--space-4);
+  }
+}
+
+/* =========================================
+   S007｜Applications Responsive
+========================================= */
+
+@media (max-width: 991.98px) {
+  .application-feature,
+  .application-feature img {
+    min-height: 480px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .application-feature,
+  .application-feature img {
+    min-height: 320px;
+  }
+
+  .application-card {
+    min-height: auto;
+    padding: var(--space-5);
+  }
+
+  .application-card__title {
+    font-size: 1.1rem;
+  }
+
+  .application-card__text {
+    font-size: 0.875rem;
+  }
+}
+
+/* =========================================
+   S008｜Why Tayulee Responsive
+========================================= */
+
+@media (max-width: 991.98px) {
+  .why-us-intro {
+    position: static;
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .why-us-item {
+    grid-template-columns: 48px 1fr;
+    gap: var(--space-4);
+    padding-block: var(--space-5);
+  }
+
+  .why-us-item__title {
+    font-size: 1.15rem;
+  }
+
+  .why-us-item__text {
+    font-size: 0.875rem;
+  }
+}
+
+/* =========================================
+   S009｜Technical Resources Responsive
+========================================= */
+
+@media (max-width: 991.98px) {
+  .resource-download {
+    padding: var(--space-6);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .resource-card {
+    min-height: auto;
+    padding: var(--space-5);
+  }
+
+  .resource-card__title {
+    font-size: 1.35rem;
+  }
+
+  .resource-download {
+    padding: var(--space-5);
+  }
+
+  .resource-download__title {
+    font-size: 1.3rem;
+  }
+}
+
+/* =========================================
+   S010｜News Responsive
+========================================= */
+
+@media (max-width: 991.98px) {
+  .news-card__body {
+    padding: var(--space-5);
+  }
+
+  .news-card__title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .news-card__body {
+    padding: var(--space-5);
+  }
+
+  .news-card__excerpt {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .news-card__image {
+    aspect-ratio: 16 / 9;
+  }
+
+  .news-card__body {
+    padding: var(--space-5);
+  }
+
+  .news-card__title {
+    font-size: 1.15rem;
+  }
+
+  .news-card__category {
+    left: var(--space-3);
+    bottom: var(--space-3);
+  }
+}
+
+/* =========================================
+   S011｜Case Studies Responsive
+========================================= */
+
+@media (max-width: 991.98px) {
+  .home-case-studies .case-card__body {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home-case-studies .case-studies-grid {
+    margin-top: var(--space-6);
+  }
+
+  .home-case-studies .case-card__body {
+    padding: var(--space-5);
+  }
+
+  .home-case-studies .section-actions--center {
+    margin-top: var(--space-6);
+  }
+}
+
+/* =========================================
+   S012｜Contact / Conversion CTA
+========================================= */
+
+@media (max-width: 991.98px) {
+  .home-contact-cta .contact-cta__inner {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: var(--space-8) var(--space-6);
+  }
+
+  .home-contact-cta .contact-cta__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home-contact-cta .contact-cta__inner {
+    gap: var(--space-6);
+
+    padding: var(--space-7) var(--space-5);
+  }
+
+  .home-contact-cta .contact-cta__title {
+    font-size: 2rem;
+  }
+
+  .home-contact-cta .contact-cta__description {
+    font-size: 1rem;
+  }
+
+  .home-contact-cta .contact-cta__actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .home-contact-cta .contact-cta__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home-contact-cta .contact-cta__info {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 0.5rem;
+  }
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+@media (max-width: 767.98px) {
+  .site-footer {
+    padding-block: var(--space-8) var(--space-5);
+  }
+
+  .site-footer__bottom {
+    margin-top: var(--space-7);
+  }
+}
+
+/* =========================================
+   PAGE｜Contact
+========================================= */
+
+@media (max-width: 991.98px) {
+  .page-hero .page-title {
+    font-size: clamp(2.25rem, 6vw, 3.25rem);
+  }
+
+  .contact-card--map {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-card--map .btn {
+    width: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .page-hero .page-description {
+    font-size: 1rem;
+  }
+
+  .contact-card {
+    padding: var(--space-5);
+  }
+
+  .contact-card__title {
+    font-size: 1.125rem;
+  }
+
+  .contact-card--map .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

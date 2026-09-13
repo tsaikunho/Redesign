@@ -1,0 +1,39 @@
+.section {
+  position: relative;
+  padding-block: var(--space-9);
+}
+
+.section--soft {
+  background: var(--color-bg-soft);
+}
+
+.section--dark {
+  color: var(--color-text-inverse);
+  background: var(--color-bg-dark);
+}
+
+.section-header {
+  max-width: 760px;
+  margin-bottom: var(--space-8);
+}
+
+.section-eyebrow {
+  margin-bottom: var(--space-3);
+  color: var(--color-accent);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin-bottom: var(--space-4);
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.section-description {
+  max-width: 680px;
+  margin-bottom: 0;
+  color: var(--color-text-light);
+  font-size: 1.0625rem;
+}

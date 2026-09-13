@@ -1,0 +1,1095 @@
+/* =========================================
+   S003｜Trust / Company Proof
+========================================= */
+
+.home-trust {
+  background: var(--color-bg);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  margin-top: var(--space-7);
+  background: var(--color-border);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.trust-card {
+  min-height: 260px;
+  padding: var(--space-7);
+  background: var(--color-bg);
+  transition:
+    transform var(--transition-base),
+    background-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.trust-card:hover {
+  position: relative;
+  z-index: 2;
+  background: var(--color-bg-soft);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-4px);
+}
+
+.trust-card__number {
+  margin-bottom: var(--space-4);
+  color: var(--color-accent);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.trust-card__title {
+  margin-bottom: var(--space-4);
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.trust-card__text {
+  margin-bottom: 0;
+  color: var(--color-text-light);
+  font-size: 0.9375rem;
+  line-height: 1.8;
+}
+
+.trust-action {
+  margin-top: var(--space-7);
+}
+
+/* =========================================
+   S005｜Manufacturing Capability
+========================================= */
+
+.home-manufacturing {
+  overflow: hidden;
+}
+
+.manufacturing-intro {
+  max-width: 560px;
+}
+
+.home-manufacturing .section-title {
+  color: var(--color-text-inverse);
+}
+
+.manufacturing-intro__text {
+  margin-bottom: var(--space-5);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.0625rem;
+  line-height: 1.9;
+}
+
+.manufacturing-intro__note {
+  margin-bottom: var(--space-6);
+  padding-left: var(--space-4);
+  color: rgba(255, 255, 255, 0.55);
+  border-left: 2px solid var(--color-accent);
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+
+/* =========================================
+   Capability List
+========================================= */
+
+.manufacturing-capabilities {
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.capability-item {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: var(--space-5);
+  padding-block: var(--space-6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  transition:
+    padding-left var(--transition-base),
+    background-color var(--transition-base);
+}
+
+.capability-item:hover {
+  padding-left: var(--space-3);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.capability-item__index {
+  color: var(--color-accent);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.capability-item__title {
+  margin-bottom: var(--space-2);
+  color: var(--color-text-inverse);
+  font-size: 1.3rem;
+}
+
+.capability-item__text {
+  max-width: 620px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9375rem;
+  line-height: 1.8;
+}
+
+/* =========================================
+   S007｜Applications
+========================================= */
+
+.home-applications {
+  overflow: hidden;
+}
+
+.application-feature {
+  position: relative;
+  height: 100%;
+  min-height: 620px;
+  margin: 0;
+  overflow: hidden;
+  background: var(--color-primary);
+}
+
+.application-feature img {
+  width: 100%;
+  height: 100%;
+  min-height: 620px;
+  object-fit: cover;
+  opacity: 0.9;
+  transition: transform 0.6s ease;
+}
+
+.application-feature:hover img {
+  transform: scale(1.03);
+}
+
+.application-feature__caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: var(--space-5);
+  color: var(--color-text-inverse);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.application-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  height: 100%;
+}
+
+/* =========================================
+   S008｜Why Tayulee
+========================================= */
+
+.home-why-us {
+  position: relative;
+  background: var(--color-bg);
+}
+
+/* =========================================
+   Introduction
+========================================= */
+
+.why-us-intro {
+  position: sticky;
+  top: 120px;
+  max-width: 520px;
+}
+
+.why-us-intro__text {
+  margin-bottom: var(--space-5);
+  color: var(--color-text-light);
+  font-size: 1.0625rem;
+  line-height: 1.9;
+}
+
+.why-us-intro__note {
+  margin-bottom: var(--space-6);
+  padding-left: var(--space-4);
+  color: var(--color-text-light);
+  border-left: 2px solid var(--color-accent);
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+
+/* =========================================
+   Why Us List
+========================================= */
+
+.why-us-list {
+  border-top: 1px solid var(--color-border);
+}
+
+.why-us-item {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: var(--space-5);
+  padding-block: var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+  transition:
+    padding-left var(--transition-base),
+    background-color var(--transition-base);
+}
+
+.why-us-item:hover {
+  padding-left: var(--space-3);
+  background-color: var(--color-bg-soft);
+}
+
+/* =========================================
+   Number
+========================================= */
+
+.why-us-item__number {
+  color: var(--color-accent);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+/* =========================================
+   Content
+========================================= */
+
+.why-us-item__eyebrow {
+  margin-bottom: var(--space-2);
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.why-us-item__title {
+  margin-bottom: var(--space-3);
+  color: var(--color-primary);
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
+.why-us-item__text {
+  max-width: 620px;
+  margin-bottom: 0;
+  color: var(--color-text-light);
+  font-size: 0.9375rem;
+  line-height: 1.85;
+}
+
+/* =========================================
+   S009｜Technical Resources
+========================================= */
+
+.home-resources {
+  overflow: hidden;
+}
+
+/* =========================================
+   Header Link
+========================================= */
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-primary);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  transition: color var(--transition-fast);
+}
+
+.text-link span {
+  transition: transform var(--transition-fast);
+}
+
+.text-link:hover {
+  color: var(--color-accent);
+}
+
+.text-link:hover span {
+  transform: translateX(5px);
+}
+
+/* =========================================
+   Resource Card
+========================================= */
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 360px;
+  padding: var(--space-6);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  transition:
+    border-color var(--transition-base),
+    box-shadow var(--transition-base),
+    transform var(--transition-base);
+}
+
+.resource-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+/* =========================================
+   Top
+========================================= */
+
+.resource-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-7);
+}
+
+.resource-card__number {
+  color: var(--color-accent);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.resource-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  color: var(--color-primary);
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+/* =========================================
+   Body
+========================================= */
+
+.resource-card__body {
+  flex: 1;
+}
+
+.resource-card__eyebrow {
+  margin-bottom: var(--space-3);
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.resource-card__title {
+  margin-bottom: var(--space-4);
+  color: var(--color-primary);
+  font-size: 1.6rem;
+}
+
+.resource-card__text {
+  max-width: 560px;
+  margin-bottom: 0;
+  color: var(--color-text-light);
+  font-size: 0.9375rem;
+  line-height: 1.85;
+}
+
+/* =========================================
+   Footer / Link
+========================================= */
+
+.resource-card__footer {
+  margin-top: var(--space-6);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border);
+}
+
+.resource-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-primary);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.resource-card__link span {
+  transition: transform var(--transition-fast);
+}
+
+.resource-card__link:hover {
+  color: var(--color-accent);
+}
+
+.resource-card__link:hover span {
+  transform: translateX(5px);
+}
+
+/* =========================================
+   Download CTA
+========================================= */
+
+.resource-download {
+  margin-top: var(--space-7);
+  padding: var(--space-7);
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.resource-download__eyebrow {
+  margin-bottom: var(--space-2);
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.resource-download__title {
+  margin-bottom: var(--space-3);
+  color: var(--color-text-inverse);
+  font-size: 1.5rem;
+}
+
+.resource-download__text {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.9375rem;
+  line-height: 1.8;
+}
+
+/* =========================================
+   S010｜News
+========================================= */
+
+.home-news {
+  background: var(--color-bg);
+}
+
+/* =========================================
+   News Grid
+========================================= */
+
+.home-news .row.g-4 {
+  margin-top: var(--space-7);
+}
+
+/* =========================================
+   News Card
+========================================= */
+
+.home-news .news-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  padding: var(--space-6);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.home-news .news-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================
+   Date
+========================================= */
+
+.home-news .news-card__meta {
+  display: block;
+  margin-bottom: var(--space-4);
+  color: var(--color-text-light);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+/* =========================================
+   Title
+========================================= */
+
+.home-news .news-card__title {
+  margin-bottom: var(--space-4);
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/* =========================================
+   Excerpt
+========================================= */
+
+.home-news .news-card__excerpt {
+  margin-bottom: var(--space-6);
+  color: var(--color-text-light);
+  font-size: 0.9375rem;
+  line-height: 1.8;
+}
+
+/* =========================================
+   Read More
+========================================= */
+
+.home-news .news-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  color: var(--color-primary);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    color 0.25s ease,
+    gap 0.25s ease;
+}
+
+.home-news .news-card__link:hover {
+  gap: 0.75rem;
+  color: var(--color-accent);
+}
+
+/* =========================================
+   Section CTA
+========================================= */
+
+.home-news .section-actions {
+  margin-top: var(--space-10);
+  text-align: center;
+}
+
+/* =========================================================
+   S011｜Case Studies
+========================================================= */
+
+.home-case-studies {
+  position: relative;
+}
+
+/* ---------------------------------------------------------
+   Case Studies Grid
+--------------------------------------------------------- */
+
+.home-case-studies .case-studies-grid {
+  margin-top: var(--space-7);
+}
+
+/* ---------------------------------------------------------
+   Case Card
+--------------------------------------------------------- */
+
+.home-case-studies .case-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Hover */
+
+.home-case-studies .case-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.08);
+  border-color: var(--color-accent);
+}
+
+/* ---------------------------------------------------------
+   Case Image
+--------------------------------------------------------- */
+
+.home-case-studies .case-card__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--color-bg-soft);
+}
+
+.home-case-studies .case-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Image Hover */
+
+.home-case-studies .case-card:hover .case-card__media img {
+  transform: scale(1.04);
+}
+
+/* ---------------------------------------------------------
+   Card Body
+--------------------------------------------------------- */
+
+.home-case-studies .case-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 280px;
+  padding: var(--space-6);
+}
+
+/* ---------------------------------------------------------
+   Meta
+--------------------------------------------------------- */
+
+.home-case-studies .case-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+  font-size: 0.8125rem;
+}
+
+.home-case-studies .case-card__category {
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.home-case-studies .case-card__number {
+  color: var(--color-text-light);
+  letter-spacing: 0.08em;
+}
+
+/* ---------------------------------------------------------
+   Title
+--------------------------------------------------------- */
+
+.home-case-studies .case-card__title {
+  margin-bottom: var(--space-3);
+  color: var(--color-primary);
+  font-size: 1.35rem;
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------------
+   Excerpt
+--------------------------------------------------------- */
+
+.home-case-studies .case-card__excerpt {
+  margin-bottom: var(--space-5);
+  color: var(--color-text-light);
+  line-height: 1.8;
+}
+
+/* ---------------------------------------------------------
+   Footer
+--------------------------------------------------------- */
+
+.home-case-studies .case-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.home-case-studies .case-card__label {
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+}
+
+/* ---------------------------------------------------------
+   Case Link
+--------------------------------------------------------- */
+
+.home-case-studies .case-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-accent);
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    gap 0.25s ease,
+    color 0.25s ease;
+}
+
+.home-case-studies .case-card__link:hover {
+  gap: 0.75rem;
+  color: var(--color-primary);
+}
+
+/* ---------------------------------------------------------
+   Bottom CTA
+--------------------------------------------------------- */
+
+.home-case-studies .section-actions--center {
+  margin-top: var(--space-7);
+  text-align: center;
+}
+
+/* =========================================================
+   S012｜Contact / Conversion CTA
+========================================================= */
+
+.home-contact-cta {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---------------------------------------------------------
+   CTA Inner
+--------------------------------------------------------- */
+
+.home-contact-cta .contact-cta__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+  padding: var(--space-9) var(--space-8);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* ---------------------------------------------------------
+   Content
+--------------------------------------------------------- */
+
+.home-contact-cta .contact-cta__content {
+  max-width: 760px;
+}
+
+.home-contact-cta .section-eyebrow {
+  display: inline-block;
+  margin-bottom: var(--space-3);
+  color: var(--color-accent);
+}
+
+.home-contact-cta .contact-cta__title {
+  margin-bottom: var(--space-4);
+  color: #ffffff;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.25;
+}
+
+.home-contact-cta .contact-cta__description {
+  max-width: 680px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+/* ---------------------------------------------------------
+   Actions
+--------------------------------------------------------- */
+
+.home-contact-cta .contact-cta__actions {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* ---------------------------------------------------------
+   Primary CTA
+--------------------------------------------------------- */
+
+.home-contact-cta .contact-cta__primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.home-contact-cta .contact-cta__primary:hover {
+  gap: 0.75rem;
+}
+
+/* ---------------------------------------------------------
+   Secondary CTA
+--------------------------------------------------------- */
+
+.home-contact-cta .contact-cta__secondary {
+  white-space: nowrap;
+}
+
+/* ---------------------------------------------------------
+   Focus
+--------------------------------------------------------- */
+
+.home-contact-cta a:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+/* ---------------------------------------------------------
+   Contact Information
+--------------------------------------------------------- */
+
+.home-contact-cta .contact-cta__info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.5rem;
+  margin-top: var(--space-5);
+}
+
+.home-contact-cta .contact-cta__company {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.home-contact-cta .contact-cta__contact-link {
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.home-contact-cta .contact-cta__contact-link:hover {
+  color: #ffffff;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+  padding-block: var(--space-9) var(--space-5);
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.site-footer__company-name {
+  margin-bottom: var(--space-4);
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.site-footer__description {
+  max-width: 480px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.8;
+}
+
+.site-footer__title {
+  margin-bottom: var(--space-4);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.site-footer__contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer__contact-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.site-footer__label {
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 0.8125rem;
+}
+
+.site-footer__link,
+.site-footer__address {
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
+  line-height: 1.7;
+  transition: color 0.25s ease;
+}
+
+.site-footer__link:hover,
+.site-footer__address:hover {
+  color: #ffffff;
+}
+
+.site-footer__address {
+  display: block;
+  max-width: 360px;
+}
+
+.site-footer__map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: var(--space-4);
+  color: var(--color-accent);
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    gap 0.25s ease,
+    color 0.25s ease;
+}
+
+.site-footer__map-link:hover {
+  gap: 0.75rem;
+  color: #ffffff;
+}
+
+.site-footer a:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+.site-footer__bottom {
+  margin-top: var(--space-8);
+  padding-top: var(--space-5);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.site-footer__copyright {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   PAGE｜Contact
+========================================================= */
+
+/* ---------------------------------------------------------
+   Contact Page Hero
+--------------------------------------------------------- */
+
+.page-hero {
+  position: relative;
+  background: var(--color-bg);
+}
+
+.page-hero .page-title {
+  margin-bottom: var(--space-4);
+  color: var(--color-primary);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.2;
+}
+
+.page-hero .page-description {
+  max-width: 720px;
+  margin-bottom: 0;
+  color: var(--color-text-light);
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+/* ---------------------------------------------------------
+   Contact Information
+--------------------------------------------------------- */
+
+.contact-information {
+  background: var(--color-bg-soft);
+}
+
+/* ---------------------------------------------------------
+   Contact Card
+--------------------------------------------------------- */
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: var(--space-6);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.06);
+}
+
+/* ---------------------------------------------------------
+   Contact Card Label
+--------------------------------------------------------- */
+
+.contact-card__label {
+  display: block;
+  margin-bottom: var(--space-3);
+  color: var(--color-text-light);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+/* ---------------------------------------------------------
+   Contact Card Title
+--------------------------------------------------------- */
+
+.contact-card__title {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+/* ---------------------------------------------------------
+   Contact Links
+--------------------------------------------------------- */
+
+.contact-card__title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.contact-card__title a:hover {
+  color: var(--color-accent);
+}
+
+/* ---------------------------------------------------------
+   Contact Card Focus
+--------------------------------------------------------- */
+
+.contact-card a:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+/* ---------------------------------------------------------
+   Map Card
+--------------------------------------------------------- */
+
+.contact-card--map {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+}
+
+.contact-card--map .contact-card__label {
+  margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------
+   Contact Page CTA
+--------------------------------------------------------- */
+
+.contact-page-cta {
+  background: var(--color-bg);
+}
