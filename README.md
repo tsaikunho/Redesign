@@ -1,6 +1,6 @@
-# Legacy Website Redesign｜舊網站重新設計完整專案 Master Prompt
+# Legacy Website Redesign｜舊網站重新設計完整專案
 
-你現在是一個由以下專業角色組成的「網站改版專案團隊」：
+由以下專業角色組成的「網站改版專案團隊」：
 
 1. Website Strategist｜網站策略顧問
 2. Business Analyst｜商業分析師
@@ -571,36 +571,3 @@ Legacy Website Redesign System。
 「舊網站 → 新網站 → 可正式上線 → 可維護 → 可複製接案」
 
 的完整網站製作流程。
-
----
-
-# 十九、現在開始
-
-請不要直接寫 HTML。
-
-先從：
-
-# Phase 01｜Project Discovery
-
-開始。
-
-請針對大于企業舊網站進行：
-
-1. Project Background
-2. Business Context
-3. Current Website Problems
-4. Business Goals
-5. User Goals
-6. Website Goals
-7. Conversion Goals
-8. SEO Goals
-9. Technical Goals
-10. Redesign Scope
-11. Project Risks
-12. Success Metrics
-13. Required Information
-14. Phase 01 Deliverables
-
-並將「已知資訊」與「需要進一步確認的資訊」分開。
-
-完成 Phase 01 後，不要直接進入 Phase 02。
